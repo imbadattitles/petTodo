@@ -1,0 +1,120 @@
+*
+    box-sizing: border-box
+    
+.AddTodo
+    display: flex 
+    flex-direction: column
+    align-items: center
+    align-content: center
+    max-width: 800px
+    margin: auto
+    @media screen and (max-width: 950px) 
+        padding: 15px
+    button 
+        transition: .2s
+        cursor: pointer
+
+
+.mainInput
+    display: flex 
+    align-items: center
+    padding: 15px
+    margin-bottom: 10px
+    width: 100%
+    font-size: 20px
+    border-radius: 5px
+    margin-top: 20px
+    color: green
+    border: solid 2px rgba(green,.5)
+    outline: none
+    @media screen and (max-width: 950px) 
+        font-size: 16px
+        padding: 10px
+
+
+
+textarea.mainInput 
+    resize: none
+    width: 100%
+    height: 300px
+
+.dopBtns
+    width: 100%
+    margin: 10px
+    margin-top: 20px
+
+.secondInput
+    font-size: 20px
+    padding: 15px
+    border-radius: 30px
+    margin-bottom: 15px
+    border: 2px solid silver
+    width: 100%
+    background: none
+    color: silver
+    opacity: 1
+    background: white
+    @media screen and (max-width: 950px) 
+        font-size: 16px
+        padding: 10px
+
+.secondInput:hover
+    color: grey
+    border: 2px solid grey
+
+
+.goInput
+    font-size: 24px
+    padding: 20px
+    width: 50%
+    margin-top: 5px
+    border-radius: 30px
+    background: #e9ffe8
+    color: green
+    border: 2px solid green
+    @media screen and (max-width: 950px) 
+        font-size: 20px
+        padding: 10px
+        width: 100%
+
+.goInput:hover
+    background: rgba(205, 255, 203, 1)
+    color: black
+
+.startInput
+    font-size: 24px
+    padding: 20px
+    width: 50%
+    margin-top: 5px
+    border-radius: 30px
+    background: #e9ffe8
+    color: green
+    border: 2px solid green
+    @media screen and (max-width: 950px) 
+        font-size: 20px
+        padding: 10px
+        width: 100%
+
+.startInput:hover
+    background: rgba(205, 255, 203, 1)
+    border: 2px solid green
+    color: black
+
+.link
+    position: absolute
+    right: 10vw
+    top: 20px
+    font-size: 20px
+    @media screen and (max-width: 950px) 
+        display: none
+    a
+        text-decoration: none
+        color: green
+        opacity: 1
+        background: white 
+        padding: 10px
+        border-radius: 5px
+    a:hover 
+        color: #000
+        
+

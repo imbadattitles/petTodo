@@ -1,0 +1,6 @@
+body {
+    background: rgb(248, 248, 248);
+    background-image: url(./checklist.svg);
+    background-size: 100px;
+    background-position: center -20px;
+}

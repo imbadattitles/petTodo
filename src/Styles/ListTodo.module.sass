@@ -1,0 +1,299 @@
+* 
+    box-sizing: border-box
+    word-wrap: break-word
+.ListTodo
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 1200px
+    margin: auto
+
+    button
+        transition: .2s
+        cursor: pointer
+
+.Todo
+    margin: auto
+    margin: 80px
+    align-items: center
+    align-content: center
+    text-align: center
+    justify-content: space-between
+    border: 1px solid silver
+    padding: 40px
+    border-radius: 20px
+    background: white
+    @media screen and (max-width: 950px) 
+        margin: 20px
+        margin-bottom: 40px
+        margin-top: 40px
+        padding: 20px
+        width: 90%
+
+.title
+    font-size: 28px
+    margin: 0px !important
+    @media screen and (max-width: 950px) 
+        font-size: 20px
+
+.status
+    opacity: 80%
+    margin: 40px
+    background: whitesmoke
+    position: relative
+    border-radius: 50px
+    overflow: hidden
+    border: 1px solid silver
+    @media screen and (max-width: 950px) 
+        margin: 20px
+
+
+
+.statusText
+    position: relative
+    font-size: 20px
+    font-weight: 700
+    z-index: 10
+    color: black !important
+
+.statusWidth
+    position: absolute
+    height: 100%
+    left: 0
+    opacity: 40%
+    background: yellow
+    z-index: 5
+    transition: .5s
+    overflow: hidden
+
+.statusWidthAnim
+    position: absolute
+    height: 160px
+    top: -60px
+    width: 20px
+    background: white
+    transform: rotate(70deg)
+    opacity: 60%
+    animation: 3s infinite statusWidthAnim 
+
+
+
+    
+@keyframes statusWidthAnim
+    0%
+        left: -40%
+    100%
+        left: 120%
+        
+
+.step
+    display: block
+    max-width: 800px
+    margin: auto
+    padding-top: 30px
+    padding-bottom: 40px
+    border-bottom: 1px solid silver
+    @media screen and (max-width: 950px) 
+        display: flex 
+        flex-direction: column
+        padding-top: 20px
+        padding-bottom: 25px
+
+.stepText
+    margin: auto
+    margin-top: 20px
+
+.step:first-child
+    border-top: 1px solid silver 
+
+.stepStatus
+    max-width: 500px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    margin: auto
+    align-items: center
+    align-content: center
+    justify-content: space-between
+    margin-bottom: 5px
+    color: silver
+    @media screen and (max-width: 950px) 
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        row-gap: 10px
+
+.stepCifer
+    font-size: 24px
+    font-weight: 600
+    opacity: .7
+
+
+.stepStatusDone
+    color: green 
+    font-weight: 600
+
+.stepStatusNotDone
+    color: grey 
+    font-weight: 600
+    
+.StepStatusBtn
+    font-size: 12px
+    color: grey 
+    background: none
+    border: 1px solid grey !important
+    padding: 3px
+    opacity: 70%
+    border-radius: 10px
+    transition: .2s
+    width: 140px
+    margin-left: auto
+.StepStatusBtn:hover
+    opacity: 1
+    color: black
+
+.NoSteps
+    margin: 15px
+    color: grey
+
+.stepDates
+    font-size: 14px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    margin: 15px
+    font-weight: 600
+    align-items: center
+    margin-bottom: 15px
+    @media screen and (max-width: 950px) 
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr
+        row-gap: 10px
+
+
+.stepDate
+    display: flex 
+    flex-direction: column
+    align-items: center
+
+.aboutDate
+    font-size: 10px
+.startDate
+    color: green
+
+.id
+    color: black
+    font-size: 12px
+    opacity: 50%
+
+.endDate
+    color: green
+
+
+
+.todoBtns button 
+    margin: 10px
+    width: 200px
+    border-radius: 10px
+    background: none
+    font-size: 16px
+    padding: 5px
+    border: 1px solid black
+    opacity: 60%
+    transition: .2s
+
+.todoBtns button:hover
+    opacity: 1
+
+
+.deleteBtn
+    color: rgb(155, 82, 82)
+    border: 2px solid rgb(155, 82, 82) !important
+    
+.deleteBtn:hover
+    color: white
+    background: rgb(155, 82, 82) !important
+
+.changeBtn
+    color: green
+    border: 2px solid green !important
+
+.changeBtn:hover
+    color: white
+    background: green
+
+.statusBtn
+    color: grey 
+    border: 2px solid grey !important
+
+.statusBtn:hover
+    color: white
+    background: grey
+
+.deleteBg
+    display: flex 
+    align-content: center
+    align-items: center
+    justify-content: center
+    position: fixed 
+    z-index: 100
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background: rgba(0,0 ,0 ,.5 )
+
+.deleteModal
+    background: white
+    padding: 50px
+    border-radius: 20px
+    position: relative
+    button 
+        font-size: 20px
+        padding: 10px
+        border-radius: 10px
+        border: none
+        margin: 5px
+        width: 200px
+        opacity: .5
+        background: none
+        transition: .2s
+        @media screen and (max-width: 950px)
+            width: 80%
+            margin-top: 10px
+    button:hover
+        opacity: 1
+    @media screen and (max-width: 950px)
+        padding: 10px
+        width: 90vw
+
+.todoText
+    font-size: 28px
+    font-weight: 700
+    width: 500px
+    display: block
+    margin-bottom: 30px
+    @media screen and (max-width: 950px)
+        display: block
+        font-size: 20px
+        margin-bottom: 15px
+        max-width: 100%
+
+
+.deleteBtnModal
+    border: 2px solid red !important
+    color: red
+
+
+.noDeleteBtn
+    border: 2px solid green !important
+    color: green
+
+
+.notTodos
+    margin: 100px
+    font-size: 64px
+    background: white
+    border-radius: 30px
+    padding: 50px
+    color: silver
+    border: 1px solid silver
+    font-weight: 300
+    opacity: .8
